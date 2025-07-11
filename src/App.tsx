@@ -1,7 +1,11 @@
+import fetchUsers from "./lib/fetchUsers";
+
 function App() {
   return (
-    <div>This is ZOD + React Hook Form Learning.</div>
-  )
+    <div>
+      <button onClick={async () => await fetchUsers()}>Click</button>
+    </div>
+  );
 }
 
-export default App
+export default App;
