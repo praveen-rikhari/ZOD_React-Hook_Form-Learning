@@ -1,9 +1,10 @@
+import Form from "./components/Form";
 import fetchUsers from "./lib/fetchUsers";
 
 function App() {
   return (
     <div>
-      <button onClick={async () => await fetchUsers()}>Click</button>
+      <Form />
     </div>
   );
 }
